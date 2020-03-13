@@ -4,14 +4,14 @@ import SignIn from './SignIn'
 import SignUp from './SignUp'
 
 function App() {
-    return (
-        <Router>
-            <Switch>
-                <Route component={SignIn} path='/login'/>
-                <Route component={SignUp} path='/sign-up'/>
-            </Switch>
-        </Router>
-    );
+  return (
+    <Router>
+      <Switch>
+        <Route component={SignIn} path='/login'/>
+        <Route component={SignUp} path='/sign-up'/>
+      </Switch>
+    </Router>
+  );
 }
 
 export default App;
