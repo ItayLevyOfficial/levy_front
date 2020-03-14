@@ -13,20 +13,22 @@ import { makeStyles } from '@material-ui/core/styles';
 import Container from '@material-ui/core/Container';
 import Link from '@material-ui/core/Link'
 import { Link as RouterLink } from 'react-router-dom';
+import constants from "./constants";
+
 
 function Copyright() {
   return (
     <Typography variant="body2" color="textSecondary" align="center">
       {'Copyright © '}
       <Link component={RouterLink} to={'/login' /* TODO */} color="inherit">
-        Your Website
-    </Link>{' '}
+        {constants.websiteName}
+      </Link>{' '}
       {new Date().getFullYear()}
       {'.'}
     </Typography>
   );
 }
-// aaa
+
 const useStyles = makeStyles(theme => ({
   paper: {
     marginTop: theme.spacing(8),

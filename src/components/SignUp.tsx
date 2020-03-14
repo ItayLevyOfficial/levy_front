@@ -14,13 +14,15 @@ import { makeStyles } from '@material-ui/core/styles';
 import Container from '@material-ui/core/Container';
 import { Link as RouterLink } from 'react-router-dom'
 import routes from './routes'
+import constants from './constants'
+
 
 function Copyright() {
   return (
     <Typography variant="body2" color="textSecondary" align="center">
       {'Copyright © '}
       <Link color="inherit" component={RouterLink} to={routes.copyright}>
-        Your Website
+        {constants.websiteName}
       </Link>{' '}
       {new Date().getFullYear()}
       {'.'}
