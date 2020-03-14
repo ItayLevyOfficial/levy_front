@@ -15,7 +15,6 @@ import Link from '@material-ui/core/Link'
 import { Link as RouterLink } from 'react-router-dom';
 import constants from "./constants";
 
-
 function Copyright() {
   return (
     <Typography variant="body2" color="textSecondary" align="center">
