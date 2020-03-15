@@ -1,5 +1,6 @@
 export default {
     login: '/login',
     SignUp: '/sign-up',
-    copyright: '/login'
+    copyright: '/login',
+    resetPassword: '/sign-up'
 }

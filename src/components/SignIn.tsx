@@ -14,12 +14,13 @@ import Container from '@material-ui/core/Container';
 import Link from '@material-ui/core/Link'
 import { Link as RouterLink } from 'react-router-dom';
 import constants from "./constants";
+import routes from "./routes"
 
 function Copyright() {
   return (
     <Typography variant="body2" color="textSecondary" align="center">
       {'Copyright © '}
-      <Link component={RouterLink} to={'/login' /* TODO */} color="inherit">
+      <Link component={RouterLink} to={routes.copyright} color="inherit">
         {constants.websiteName}
       </Link>{' '}
       {new Date().getFullYear()}
@@ -102,12 +103,12 @@ export default function SignIn() {
           </Button>
           <Grid container>
             <Grid item xs>
-              <Link component={RouterLink} to={'/login' /* TODO */} variant="body2">
+              <Link component={RouterLink} to={routes.resetPassword} variant="body2">
                 Forgot password?
               </Link>
             </Grid>
             <Grid item>
-              <Link component={RouterLink} to={'/sign-up'} variant="body2">
+              <Link component={RouterLink} to={routes.SignUp} variant="body2">
                 {"Don't have an account? Sign Up"}
               </Link>
             </Grid>
