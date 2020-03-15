@@ -14,20 +14,9 @@ import Container from '@material-ui/core/Container';
 import Link from '@material-ui/core/Link'
 import { Link as RouterLink } from 'react-router-dom';
 import constants from "./constants";
-import routes from "./routes"
+import routes from "./routes";
+import {Copyright} from './copyright';
 
-function Copyright() {
-  return (
-    <Typography variant="body2" color="textSecondary" align="center">
-      {'Copyright © '}
-      <Link component={RouterLink} to={routes.copyright} color="inherit">
-        {constants.websiteName}
-      </Link>{' '}
-      {new Date().getFullYear()}
-      {'.'}
-    </Typography>
-  );
-}
 
 const useStyles = makeStyles(theme => ({
   paper: {

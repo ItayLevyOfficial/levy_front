@@ -15,20 +15,8 @@ import Container from '@material-ui/core/Container';
 import { Link as RouterLink } from 'react-router-dom'
 import routes from './routes'
 import constants from './constants'
-
-
-function Copyright() {
-  return (
-    <Typography variant="body2" color="textSecondary" align="center">
-      {'Copyright © '}
-      <Link color="inherit" component={RouterLink} to={routes.copyright}>
-        {constants.websiteName}
-      </Link>{' '}
-      {new Date().getFullYear()}
-      {'.'}
-    </Typography>
-  );
-}
+import { useState } from 'react';
+import {Copyright} from './copyright';
 
 const useStyles = makeStyles(theme => ({
   paper: {
@@ -63,7 +51,7 @@ export default function SignUp() {
         <Typography component="h1" variant="h5">
           Sign up
         </Typography>
-        <form className={classes.form} noValidate>
+        <form className={classes.form}>
           <Grid container spacing={2}>
             <Grid item xs={12} sm={6}>
               <TextField
@@ -86,6 +74,8 @@ export default function SignUp() {
                 label="Last Name"
                 name="lastName"
                 autoComplete="lname"
+                // error={}
+                helperText="Insert valid helper text."
               />
             </Grid>
             <Grid item xs={12}>
