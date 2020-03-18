@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { ChangeEvent, HtmlHTMLAttributes } from 'react';
 import Avatar from '@material-ui/core/Avatar';
 import Button from '@material-ui/core/Button';
 import CssBaseline from '@material-ui/core/CssBaseline';
@@ -16,7 +16,8 @@ import { Link as RouterLink } from 'react-router-dom'
 import routes from './routes'
 import constants from './constants'
 import { useState } from 'react';
-import {Copyright} from './copyright';
+import { Copyright } from './copyright';
+import validator from 'validator';
 
 const useStyles = makeStyles(theme => ({
   paper: {
@@ -38,9 +39,21 @@ const useStyles = makeStyles(theme => ({
   },
 }));
 
-export default function SignUp() {
-  const classes = useStyles();
+interface State {
+  [key: string]: string
+}
 
+const SignUp: React.FC = () => {
+  const classes = useStyles();
+  const [state, setState] = React.useState<State>({});
+
+  function handleEvent(event: ChangeEvent<HTMLTextAreaElement>) {
+    setState(
+      {
+        [event.target.name]: event.target.value
+      }
+    )
+  }
   return (
     <Container component="main" maxWidth="xs">
       <CssBaseline />
@@ -63,6 +76,8 @@ export default function SignUp() {
                 id="firstName"
                 label="First Name"
                 autoFocus
+                onChange={handleEvent}
+                error={!validator.isAlpha(state.firstName ?? 'initialEmpty')}
               />
             </Grid>
             <Grid item xs={12} sm={6}>
@@ -74,8 +89,6 @@ export default function SignUp() {
                 label="Last Name"
                 name="lastName"
                 autoComplete="lname"
-                // error={}
-                helperText="Insert valid helper text."
               />
             </Grid>
             <Grid item xs={12}>
@@ -132,3 +145,6 @@ export default function SignUp() {
     </Container>
   );
 }
+
+
+export default SignUp;

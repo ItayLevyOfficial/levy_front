@@ -15,7 +15,7 @@ import Link from '@material-ui/core/Link'
 import { Link as RouterLink } from 'react-router-dom';
 import constants from "./constants";
 import routes from "./routes";
-import {Copyright} from './copyright';
+import { Copyright } from './copyright';
 
 
 const useStyles = makeStyles(theme => ({
