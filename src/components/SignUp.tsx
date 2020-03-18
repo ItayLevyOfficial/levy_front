@@ -77,7 +77,7 @@ const SignUp: React.FC = () => {
                 label="First Name"
                 autoFocus
                 onChange={handleEvent}
-                error={!validator.isAlpha(state.firstName ?? 'initialEmpty')}
+                error={!validator.isAlpha(state.firstName ? state.firstName : 'empty')}
               />
             </Grid>
             <Grid item xs={12} sm={6}>
@@ -89,6 +89,8 @@ const SignUp: React.FC = () => {
                 label="Last Name"
                 name="lastName"
                 autoComplete="lname"
+                onChange={handleEvent}
+                error={!validator.isAlpha(state.lastName ? state.lastName: 'empty')}
               />
             </Grid>
             <Grid item xs={12}>
