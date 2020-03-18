@@ -102,6 +102,8 @@ const SignUp: React.FC = () => {
                 label="Email Address"
                 name="email"
                 autoComplete="email"
+                onChange={handleEvent}
+                error={!validator.isEmail(state.email ? state.email : 'empty')}
               />
             </Grid>
             <Grid item xs={12}>
