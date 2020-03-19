@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/levy_front/precache-manifest.7adf226552028290a798fdf8a463c592.js"
+  "/levy_front/precache-manifest.b18b3e5e17e585014219bd1e9c85610e.js"
 );
 
 self.addEventListener('message', (event) => {
