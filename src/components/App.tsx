@@ -1,23 +1,18 @@
-import React from 'react';
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-import routes from './routes';
-import InstagramLogin from 'react-instagram-login';
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import React from "react";
+import routes from "./routes";
+import { Container, Button, Grid } from "@material-ui/core"
 
-const responseInstagram = (response) => {
-  console.log(response);
-}
-
-const Login: React.FC = () => {
+const SignIn: React.FC = () => {
   return (
-    <InstagramLogin
-      clientId="498277677742228"
-      buttonText="Login"
-      onSuccess={responseInstagram}
-      onFailure={responseInstagram}
-      scope="user_profile"
-      redirectUri="https://itaylevyofficial.github.io/levy_front/"
-      style={{justifyContent: 'center'}}
-    />
+    <Grid
+      container
+      direction="row"
+      justify="center"
+      alignItems="center"
+    >
+      <Button>Login with instagram</Button>
+    </Grid>
   )
 }
 
@@ -27,7 +22,7 @@ function App() {
       <Switch>
         <Route
           path={routes.instagram_login}
-          component={Login}
+          component={SignIn}
         />
       </Switch>
     </Router>
