@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "60d7713f55a2cc78589cf4525bbe647f",
+    "revision": "a07499546e9f8d22c52c4da8766b7732",
     "url": "/levy_front/index.html"
   },
   {
@@ -12,8 +12,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/levy_front/static/js/2.4792020a.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "de39346cae11fba79cea",
-    "url": "/levy_front/static/js/main.b042c44c.chunk.js"
+    "revision": "d6a6fe2112e4aeca2ac1",
+    "url": "/levy_front/static/js/main.bcfaaf6e.chunk.js"
   },
   {
     "revision": "5e6559727b0fde7087a2",
