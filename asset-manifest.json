@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.js": "/levy_front/static/js/main.596e9481.chunk.js",
-    "main.js.map": "/levy_front/static/js/main.596e9481.chunk.js.map",
+    "main.js": "/levy_front/static/js/main.a325a241.chunk.js",
+    "main.js.map": "/levy_front/static/js/main.a325a241.chunk.js.map",
     "runtime-main.js": "/levy_front/static/js/runtime-main.9ad7f1a4.js",
     "runtime-main.js.map": "/levy_front/static/js/runtime-main.9ad7f1a4.js.map",
-    "static/js/2.4792020a.chunk.js": "/levy_front/static/js/2.4792020a.chunk.js",
-    "static/js/2.4792020a.chunk.js.map": "/levy_front/static/js/2.4792020a.chunk.js.map",
+    "static/js/2.e98a4ee9.chunk.js": "/levy_front/static/js/2.e98a4ee9.chunk.js",
+    "static/js/2.e98a4ee9.chunk.js.map": "/levy_front/static/js/2.e98a4ee9.chunk.js.map",
     "index.html": "/levy_front/index.html",
-    "precache-manifest.5fa9258f37734f7526f5d779281f0334.js": "/levy_front/precache-manifest.5fa9258f37734f7526f5d779281f0334.js",
+    "precache-manifest.f66fb5e585e1a0a924c008d437ebd1f5.js": "/levy_front/precache-manifest.f66fb5e585e1a0a924c008d437ebd1f5.js",
     "service-worker.js": "/levy_front/service-worker.js",
-    "static/js/2.4792020a.chunk.js.LICENSE.txt": "/levy_front/static/js/2.4792020a.chunk.js.LICENSE.txt"
+    "static/js/2.e98a4ee9.chunk.js.LICENSE.txt": "/levy_front/static/js/2.e98a4ee9.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.9ad7f1a4.js",
-    "static/js/2.4792020a.chunk.js",
-    "static/js/main.596e9481.chunk.js"
+    "static/js/2.e98a4ee9.chunk.js",
+    "static/js/main.a325a241.chunk.js"
   ]
 }
