@@ -10,6 +10,7 @@ const SignIn: React.FC = () => {
       direction="row"
       justify="center"
       alignItems="center"
+      style={{minHeight: '100vh'}}
     >
       <Button>Login with instagram</Button>
     </Grid>
