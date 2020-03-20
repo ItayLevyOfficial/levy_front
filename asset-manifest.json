@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.js": "/levy_front/static/js/main.ec0fead5.chunk.js",
-    "main.js.map": "/levy_front/static/js/main.ec0fead5.chunk.js.map",
+    "main.js": "/levy_front/static/js/main.ef127f1d.chunk.js",
+    "main.js.map": "/levy_front/static/js/main.ef127f1d.chunk.js.map",
     "runtime-main.js": "/levy_front/static/js/runtime-main.9ad7f1a4.js",
     "runtime-main.js.map": "/levy_front/static/js/runtime-main.9ad7f1a4.js.map",
     "static/js/2.e98a4ee9.chunk.js": "/levy_front/static/js/2.e98a4ee9.chunk.js",
     "static/js/2.e98a4ee9.chunk.js.map": "/levy_front/static/js/2.e98a4ee9.chunk.js.map",
     "index.html": "/levy_front/index.html",
-    "precache-manifest.051670d78b5217948266b1cfd6357d01.js": "/levy_front/precache-manifest.051670d78b5217948266b1cfd6357d01.js",
+    "precache-manifest.5cb78a92661d4921dca7f70aebed7c9b.js": "/levy_front/precache-manifest.5cb78a92661d4921dca7f70aebed7c9b.js",
     "service-worker.js": "/levy_front/service-worker.js",
     "static/js/2.e98a4ee9.chunk.js.LICENSE.txt": "/levy_front/static/js/2.e98a4ee9.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.9ad7f1a4.js",
     "static/js/2.e98a4ee9.chunk.js",
-    "static/js/main.ec0fead5.chunk.js"
+    "static/js/main.ef127f1d.chunk.js"
   ]
 }
