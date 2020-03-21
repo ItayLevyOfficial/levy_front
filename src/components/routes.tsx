@@ -1,3 +1,4 @@
 export default {
-    instagram_login: '/'
+    instagramLogin: '/instagram-login',
+    instagramRedirectURI: '/instagram-redirect'
 }
