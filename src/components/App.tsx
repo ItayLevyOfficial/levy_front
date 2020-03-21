@@ -1,17 +1,8 @@
-import { BrowserRouter as Router, Switch, Route, useLocation } from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import React from "react";
 import routes from "./routes";
 import { InstagramLogin } from './instagramLogin';
-
-const InstagramRedirect: React.FC = () => {
-  const code = (new URLSearchParams(useLocation().search)).get('code');
-  console.log(code);
-  return (
-    <div>
-      TODO
-    </div>
-  )
-}
+import { InstagramRedirect } from "./InstagramRedirect";
 
 function App() {
   return (
