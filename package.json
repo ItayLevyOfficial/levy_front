@@ -21,6 +21,7 @@
     "react-instagram-login": "^1.4.0",
     "react-router-dom": "latest",
     "react-scripts": "3.4.0",
+    "relay": "^0.8.0-1",
     "typescript": "^3.7.5"
   },
   "scripts": {
